@@ -1,6 +1,5 @@
 SELECT * FROM db_arkade_store.tb_produto;
-UPDATE db_arkade_store.tb_produto SET desenvolvedora_id = 2 WHERE (id = 1);
-UPDATE db_arkade_store.tb_produto SET desenvolvedora_id = 1 WHERE (id = 2);
-UPDATE db_arkade_store.tb_produto SET desenvolvedora_id = 3 WHERE (id = 3);
-UPDATE db_arkade_store.tb_produto SET desenvolvedora_id = 4 WHERE (id = 4);
-UPDATE db_arkade_store.tb_produto SET desenvolvedora_id = 5 WHERE (id = 5);
+
+SELECT titulo, tb_categoria.nome,tb_desenvovedora.nome ,tb_produto.descricao, preco,quantidade from 
+tb_categoria inner join tb_produto on tb_produto.categoria_id = tb_categoria.id
+ inner join tb_desenvovedora on  tb_produto.desenvolvedora_id = tb_desenvovedora.id;
