@@ -1,0 +1,1 @@
+SELECT * FROM db_arkade_store.tb_desenvovedora;
