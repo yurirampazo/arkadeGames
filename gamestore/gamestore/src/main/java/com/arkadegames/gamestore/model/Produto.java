@@ -36,6 +36,10 @@ public class Produto {
 	@ManyToOne
 	@JsonIgnoreProperties("produto")
 	private Categoria categoria;
+	
+	@ManyToOne
+	@JsonIgnoreProperties("produto")
+	private Desenvolvedora desenvolvedora;
 
 	public long getId() {
 		return id;
@@ -83,5 +87,13 @@ public class Produto {
 
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
+	}
+
+	public Desenvolvedora getDesenvolvedora() {
+		return desenvolvedora;
+	}
+
+	public void setDesenvolvedora(Desenvolvedora desenvolvedora) {
+		this.desenvolvedora = desenvolvedora;
 	}
 }

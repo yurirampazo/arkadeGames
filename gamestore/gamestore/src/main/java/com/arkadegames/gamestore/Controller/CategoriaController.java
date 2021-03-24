@@ -20,7 +20,7 @@ import com.arkadegames.gamestore.repository.CategoriaRepository;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
-@RequestMapping("/gamestore/categoria")
+@RequestMapping("/gamestore/categorias")
 public class CategoriaController {
 	
 	@Autowired
