@@ -23,7 +23,7 @@ public class Desenvolvedora {
 	private long id;
 	
 	@NotNull
-	@Size(min = 10, max = 600)
+	@Size(min = 1, max = 600)
 	private String nome;
 
 	@OneToMany(mappedBy = "desenvolvedora", cascade = CascadeType.ALL)
